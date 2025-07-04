@@ -3,7 +3,7 @@
 <title> cybrom </title>
 
 </head>
-<body bgcolor="cream">
+<body bgcolor="white">
 
 <b>block tag - it take 100% width for ex- h1,h2,p,</b>
 <br>
@@ -93,10 +93,12 @@ x<sup>2</sup>
 <a href="www.google.com" >go to google</a>
 <hr>
 
-<form>      
+<form>     
+    <fieldset> <legend > personal info </legend>
 enter name :<input type="text" required placeholder="enter your name" > <br>
 enter number:<input type="number" placeholder="enter your mobile no."><br>
-enter email : <input type="email" placeholder="enter your email"><br>
+enter email : <input type="email" placeholder="enter your email">
+  </fieldset><br>
 
 enter password :<input type="password" placeholder="type your password">
 
@@ -104,9 +106,12 @@ enter dob : <input type="date"><br>
 enter color: <input type="color"><br>
 <input type="checkbox">i accept all terms & conditions :<br>
 gender:
-<input type="radio" name="gender">male
-<input type="radio" name="gender">female
-<input type="radio"name="gender"> others
+<br>
+<label for="male">male</label><input type="radio" name="gender" id="male">
+<br>
+<label for="female">female</label><input type="radio" name="gender" id="female">
+<br>
+<label for="others">others</label><input type="radio"name="gender" id="others">
 <br>
 <br>
 
@@ -130,8 +135,8 @@ select city<select>
 <input type="submit" value="login">
 
 <!-- use label , fieldset , legend tag  -->
- <label for="id1">
-    <input type="radio" value="class x" name="class" id="id1">
+ <!-- <label for="id1">
+    <input type="radio" value="class x" name="class" id="id1"> -->
 
 
 
@@ -176,8 +181,18 @@ select city<select>
 <td>chennai</td>
 <td>10000/-</td>
 
+<details>
+<summary>computer</summary>
+<p>computer is an electronic machine</p>
+
+</details>
+
+temp : <meter low="0" high="100" max="100" value="85" > 85 C </meter>
+<br>
+downloading <progress value="45" max="100"></progress>
 
 
+<br>
 </tr>
 
 
@@ -186,7 +201,8 @@ select city<select>
  </label>
 
 </form>
-
+<br>
+<p> my name is <abbr title="shubham khandarey">sk!</abbr></p>
 
 
 </body>
